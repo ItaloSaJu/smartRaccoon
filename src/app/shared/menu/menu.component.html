@@ -1,0 +1,62 @@
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li>
+        <a href="">Home</a>
+      </li>
+      <li>
+        <a href="">{{ "MENU.SERVICE" | translate }}</a>
+      </li>
+      <li>
+        <a routerLink="./portafolio">Portafolio</a>
+      </li>
+      <li>
+        <a href="">Contactanos</a>
+      </li>
+      <li>
+        <div class="btn-group">
+          <button 
+            class="btn prova btn-lg dropdown-toggle" 
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <a class="icon-link" href="#">
+              <img [src]="getIconPath(translateService.currentLang)" alt="" />
+            </a>
+            <h5>
+                {{ translateService.currentLang }} 
+            </h5> 
+          </button>
+
+          <ul class="dropdown-menu prova2">
+            <li
+              *ngFor="let language of translateService.getLangs()"
+              class="vediamo"
+              (click)="switchLang(language)"
+              [class.selected]="language === translateService.currentLang"
+            >
+              {{ language }} 
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

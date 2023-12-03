@@ -1,0 +1,8 @@
+{
+    "MENU":{
+        "HOME":"home",
+        "SERVICE":"Servicios",
+        "WALLET":"Portafolio",
+        "CONTACT":"Contactanos"
+    }
+}
