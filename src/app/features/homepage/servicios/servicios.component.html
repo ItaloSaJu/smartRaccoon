@@ -1,0 +1,17 @@
+
+<div class="container-servicio">
+    <div class="container-cards">
+        <div class="title">
+            Servicios
+        </div>
+        <div class=" container-card ">
+            <div class="container-flex">
+                <div class="card" *ngFor="let card of card">
+                    <img  src="{{card.img}}" alt="">
+                    <h2>{{card.title}}</h2>
+                    <p>{{card.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

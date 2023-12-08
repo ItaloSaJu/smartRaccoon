@@ -4,5 +4,11 @@
         "SERVICE":"Service",
         "WALLET":"Our works",
         "CONTACT":"Contacts"
+    },
+    "HOMEPAGE":{
+        "SOLUTIONS": "Customized ",
+        "DIGITAL":"Digital ",
+        "CUSTOMIZED":"Solutions",
+        "DESCRIPTION":"We develop customized digital solutions that empower your business with innovative software tailored to your specific needs."
     }
 }

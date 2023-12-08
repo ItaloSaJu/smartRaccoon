@@ -4,5 +4,12 @@
         "SERVICE":"Servicios",
         "WALLET":"Portafolio",
         "CONTACT":"Contactanos"
+    },
+    "HOMEPAGE":{
+        "SOLUTIONS": "Soluciones",
+        "DIGITAL":"Digitale",
+        "CUSTOMIZED":"Personalizadas",
+        "DESCRIPTION":"Desarrollamos soluciones digitales personalizadas que potencian tu empresa con software innovador y adaptado a tus necesidades específicas."
     }
+    
 }
