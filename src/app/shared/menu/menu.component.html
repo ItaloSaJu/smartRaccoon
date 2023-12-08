@@ -1,7 +1,10 @@
 
-<nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+
+<nav class="navbar navbar-expand-lg row">
+  <div class="col-3 container-fluid  ">
+    <a class="navbar-brand" href="#">
+      <img routerLink="/" src="../../../assets/img/logo.svg" alt="">
+    </a>
 
     <button
       class="navbar-toggler"
@@ -15,8 +18,8 @@
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
+  <div class="col-9 collapse navbar-collapse container-navbar" id="navbarSupportedContent">
+    <ul class="navbar-nav ">
       <li>
         <a href="">{{ "MENU.HOME" | translate }}</a>
       </li>
@@ -32,7 +35,7 @@
       <li>
         <div class="btn-group">
           <button 
-            class="btn prova btn-lg dropdown-toggle" 
+            class="btn button-dropdawn btn-lg dropdown-toggle" 
             type="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
@@ -45,10 +48,10 @@
             </h5> 
           </button>
 
-          <ul class="dropdown-menu prova2">
+          <ul class="dropdown-menu ">
             <li
               *ngFor="let language of translateService.getLangs()"
-              class="vediamo"
+              class="menu-discesa"
               (click)="switchLang(language)"
               [class.selected]="language === translateService.currentLang"
             >

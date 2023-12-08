@@ -1,5 +1,6 @@
 .navbar{
-    padding:10px  100px;
+    width: 100%;
+    padding:30px  100px;
 }
 .navbar-nav{
     gap: 10px;
@@ -9,18 +10,39 @@
     }
 }
 
+.container-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
 
-
-
-.prova{
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.button-dropdawn{
     width: 90px;
-    height: 34px;
+    height: 40px;
     border: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 5px;
     padding: 5px;
+    border-radius: 16px;
 }
+
 .dropdown-menu{
-    width: 50px;
+    padding: 0;
+    --bs-dropdown-min-width: 5.7rem;
+}
+
+.menu-discesa{
+    height: 30px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.36);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

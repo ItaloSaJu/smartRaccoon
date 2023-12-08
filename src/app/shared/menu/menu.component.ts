@@ -18,7 +18,7 @@ export interface SelectCustomEvent<T = any> extends CustomEvent {
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
   standalone: true,
-  imports: [TranslateModule, CommonModule, RouterLink],
+  imports: [TranslateModule, CommonModule, RouterLink,RouterLink],
 })
 export class MenuComponent {
   LOCALE = 'locale';
