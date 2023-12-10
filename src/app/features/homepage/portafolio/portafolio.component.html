@@ -1,0 +1,84 @@
+<div class="container-servicio">
+  <div class="container-cards">
+    <div class="title">
+      Proyectos
+      <div class="link-portafolio">
+        <button>
+          <img src="../../../../assets/img/arrow-right.svg" alt="" />
+          NUESTROS PROYECTOS
+        </button>
+      </div>
+    </div>
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <div class="container-img">
+            <ng-container *ngFor="let data of dataCards">
+              <div class="single-image" *ngIf="data.position === 1">
+                <img src="{{ data.image }}" class="w-100" alt="..." />
+                <div class="image-content">
+                  <h3>{{ data.title }}</h3>
+                  <p>{{ data.description }}</p>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+         <div class="carousel-item " data-bs-interval="4000">
+          <div class="container-img">
+            <ng-container *ngFor="let data of dataCards">
+              <div class="single-image" *ngIf="data.position === 2">
+                <img src="{{ data.image }}" class="w-100" alt="..." />
+                <div class="image-content">
+                  <h3>{{ data.title }}</h3>
+                  <p>{{ data.description }}</p>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div> 
+        <div class="carousel-item " data-bs-interval="4000">
+          <div class="container-img">
+            <ng-container *ngFor="let data of dataCards">
+              <div class="single-image" *ngIf="data.position === 3">
+                <img src="{{ data.image }}" class="w-100" alt="..." />
+                <div class="image-content">
+                  <h3>{{ data.title }}</h3>
+                  <p>{{ data.description }}</p>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="row">
+      <button class="btn-cotizacion">
+        <span><img src="../../../../assets/img/arrow-right.svg" alt="" /></span>
+        <h5>Comienza tu cotizacion</h5>
+      </button>
+    </div>
+  </div>
+</div>
